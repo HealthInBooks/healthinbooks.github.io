@@ -3,75 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>헬스인북스 | 어린이 구강보건 교육 전문</title>
+    <title>헬스인북스 | 어린이 구강 건강 교육 솔루션</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; }
+        .scroll-mt { scroll-margin-top: 80px; }
+    </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-gray-900 leading-relaxed">
 
-    <nav class="p-6 bg-white shadow-sm flex justify-between items-center sticky top-0 z-50">
-        <div class="text-2xl font-bold text-blue-600">HealthInBooks</div>
-        <div class="space-x-8 font-medium">
-            <a href="#about" class="hover:text-blue-500">교육철학</a>
-            <a href="#books" class="hover:text-blue-500">교재소개</a>
-            <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700">문의하기</a>
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600 tracking-tight">HealthInBooks</div>
+            <div class="hidden md:flex space-x-10 font-medium text-gray-600">
+                <a href="#features" class="hover:text-blue-600 transition">특장점</a>
+                <a href="#products" class="hover:text-blue-600 transition">교재안내</a>
+                <a href="#custom" class="hover:text-blue-600 transition">맞춤제작</a>
+                <a href="#contact" class="hover:text-blue-600 transition">문의하기</a>
+            </div>
+            <a href="#contact" class="bg-blue-600 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-blue-700 transition shadow-lg shadow-blue-200">
+                제안서 요청
+            </a>
         </div>
     </nav>
 
-    <section class="py-24 px-6 text-center bg-white">
-        <span class="text-blue-600 font-semibold tracking-widest uppercase text-sm">Professional Dental Education</span>
-        <h1 class="text-4xl md:text-5xl font-extrabold mt-4 mb-6 leading-tight">치과의사가 직접 설계한<br>어린이 맞춤형 구강 교육 교재</h1>
-        <p class="text-gray-500 text-lg max-w-2xl mx-auto mb-10">보건소 및 교육기관 현장에 최적화된 4P·8P 압축 구성으로 아이들의 건강한 미소를 지킵니다.</p>
-        <div class="flex justify-center gap-4">
-            <a href="#books" class="px-8 py-3 border border-gray-300 rounded-full hover:bg-gray-50">교재 미리보기</a>
-            <a href="#contact" class="px-8 py-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700">샘플 및 견적 요청</a>
+    <header class="relative bg-white pt-20 pb-32 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="inline-block px-4 py-1.5 bg-blue-50 text-blue-600 rounded-full text-sm font-bold mb-6">보건소 구강보건사업 최적화 교재</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8 leading-[1.2]">
+                    치과의사와 치과위생사가<br>함께 만든 <span class="text-blue-600 font-black">치콩이 놀이북</span>
+                </h1>
+                <p class="text-lg text-gray-500 mb-10 leading-loose">
+                    놀이로 배우는 어린이 구강 건강[cite: 4].<br>
+                    아이들의 눈높이에 맞춘 캐릭터 '치콩이'와 놀이형 학습 요소를 결합하여<br>
+                    보건소 교육 현장에서 최고의 몰입도를 선사합니다[cite: 7].
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#products" class="px-8 py-4 bg-gray-900 text-white rounded-xl font-bold hover:bg-gray-800 transition">교재 라인업 보기</a>
+                    <a href="#contact" class="px-8 py-4 border-2 border-gray-200 rounded-xl font-bold hover:bg-gray-50 transition">대량 주문 문의</a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="aspect-square bg-blue-100 rounded-3xl flex items-center justify-center text-blue-300 font-bold text-xl border-4 border-white shadow-2xl overflow-hidden">
+                    치콩이 대표 이미지
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-50">
+                    <p class="text-sm font-bold text-gray-400 mb-1 uppercase tracking-widest">Status</p>
+                    <p class="text-lg font-bold">다수 보건소 활용 중 [cite: 11, 28]</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="scroll-mt py-24 bg-gray-50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 italic">"믿을 수 있는 구강교육 파트너" [cite: 6]</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-blue-600 group-hover:rotate-6 transition-all">🦷</div>
+                    <h3 class="text-xl font-bold mb-4">전문가 직접 기획</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">치과 전문 의료진(치과의사, 치과위생사)이 참여하여 의학적으로 정확한 지식을 전달합니다[cite: 9, 27].</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-blue-600 group-hover:rotate-6 transition-all">🎨</div>
+                    <h3 class="text-xl font-bold mb-4">놀이형 학습 요소</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">스티커 붙이기, 숨은그림찾기, 사다리 타기 등 아이들이 즐겁게 배울 수 있는 활동으로 구성되었습니다[cite: 10, 30].</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl shadow-sm hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-blue-600 group-hover:rotate-6 transition-all">📑</div>
+                    <h3 class="text-xl font-bold mb-4">검증된 도서 권위</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">ISBN(국제표준도서번호)과 저작권을 취득하여 공공기관 납품에 최적화되어 있습니다[cite: 11, 28].</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="about" class="py-20 bg-gray-50 px-6">
-        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-12 text-center">
-            <div>
-                <div class="text-4xl mb-4 text-blue-500">🩺</div>
-                <h3 class="text-xl font-bold mb-2">의학적 전문성</h3>
-                <p class="text-gray-500">현직 치과의사의 감수와 설계를 통해 정확한 구강 보건 정보를 전달합니다.</p>
+    <section id="products" class="scroll-mt py-24 px-6 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-16 underline decoration-blue-200 decoration-8 underline-offset-8">교재 시리즈 상세 구성 [cite: 13, 30]</h2>
+        <div class="grid lg:grid-cols-2 gap-12">
+            <div class="border border-gray-100 bg-white rounded-3xl overflow-hidden flex flex-col shadow-sm">
+                <div class="p-8 border-b bg-gray-50/50">
+                    <span class="text-blue-600 font-bold text-sm tracking-widest uppercase">Series 01</span>
+                    <h3 class="text-2xl font-bold mt-2 text-gray-800 italic">치콩이 1호 (4p)</h3>
+                </div>
+                <div class="p-8 flex-grow">
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex justify-between border-b pb-2"><span class="text-gray-400">권장 대상</span> <span class="font-bold">7세 이상 (취학 전후 아동) [cite: 14, 31]</span></li>
+                        <li class="flex justify-between border-b pb-2"><span class="text-gray-400">핵심 주제</span> <span class="font-bold text-blue-600">치아 외상 응급처치 및 역할 [cite: 14, 30]</span></li>
+                        <li class="flex justify-between border-b pb-2"><span class="text-gray-400">주요 활동</span> <span class="font-bold">미로/사다리 찾기, 숨은그림찾기 [cite: 14, 31]</span></li>
+                    </ul>
+                    <div class="bg-blue-50 p-6 rounded-2xl">
+                        <p class="text-sm font-bold text-blue-800 mb-2">💡 주요 교육 내용 [cite: 14, 30]</p>
+                        <ul class="text-sm text-blue-700 space-y-1">
+                            <li>• 영구치가 빠졌을 때 대처법 (우유 보관 등)</li>
+                            <li>• 치아의 3가지 기능 (심미, 저작, 발음)</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div>
-                <div class="text-4xl mb-4 text-blue-500">📍</div>
-                <h3 class="text-xl font-bold mb-2">현장 최적화</h3>
-                <p class="text-gray-500">보건소 교육 시간(15~30분) 내에 핵심 습관을 익힐 수 있는 최적의 분량입니다.</p>
-            </div>
-            <div>
-                <div class="text-4xl mb-4 text-blue-500">✨</div>
-                <h3 class="text-xl font-bold mb-2">맞춤형 제작</h3>
-                <p class="text-gray-500">대량 구매 시 기관 로고 삽입 및 내용 커스터마이징 서비스를 제공합니다.</p>
+
+            <div class="border border-gray-100 bg-white rounded-3xl overflow-hidden flex flex-col shadow-sm">
+                <div class="p-8 border-b bg-gray-50/50">
+                    <span class="text-green-600 font-bold text-sm tracking-widest uppercase">Series 02</span>
+                    <h3 class="text-2xl font-bold mt-2 text-gray-800 italic">치콩이 2호 (8p)</h3>
+                </div>
+                <div class="p-8 flex-grow">
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex justify-between border-b pb-2"><span class="text-gray-400">권장 대상</span> <span class="font-bold">5세 이상 (유치원/어린이집 전 연령) [cite: 14, 31]</span></li>
+                        <li class="flex justify-between border-b pb-2"><span class="text-gray-400">핵심 주제</span> <span class="font-bold text-green-600">올바른 양치 습관 및 충치 예방 [cite: 14, 30]</span></li>
+                        <li class="flex justify-between border-b pb-2"><span class="text-gray-400">활동 놀이</span> <span class="font-bold text-green-600 underline decoration-green-200">풍부한 스티커 놀이 포함 [cite: 14, 31]</span></li>
+                    </ul>
+                    <div class="bg-green-50 p-6 rounded-2xl">
+                        <p class="text-sm font-bold text-green-800 mb-2">💡 주요 교육 내용 [cite: 14, 30]</p>
+                        <ul class="text-sm text-green-700 space-y-1">
+                            <li>• 치아에 좋은 음식 vs 나쁜 음식</li>
+                            <li>• 올바른 칫솔질 방법 및 순서</li>
+                            <li>• 홈메우기(실란트)와 불소 도포의 중요성</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="books" class="py-24 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-center mb-16">교재 라인업</h2>
-        <div class="grid md:grid-cols-2 gap-10">
-            <div class="bg-white p-8 rounded-3xl shadow-sm border hover:shadow-md transition">
-                <div class="aspect-[4/3] bg-gray-100 rounded-2xl mb-6 flex items-center justify-center text-gray-400">4P 핵심 교재 이미지</div>
-                <h4 class="text-xl font-bold mb-2">핵심 습관형 (4P)</h4>
-                <p class="text-gray-500">치과 검진 및 보건소 캠페인용. 양치질 습관 형성에 집중한 직관적인 교재입니다.</p>
+    <section id="custom" class="scroll-mt py-24 bg-gray-900 text-white px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">보건소 맞춤형 혜택 (Customization)</h2>
+                <p class="text-gray-400">지역 주민들과의 친밀감을 높일 수 있도록 맞춤 제작을 지원합니다[cite: 15, 16].</p>
             </div>
-            <div class="bg-white p-8 rounded-3xl shadow-sm border hover:shadow-md transition">
-                <div class="aspect-[4/3] bg-gray-100 rounded-2xl mb-6 flex items-center justify-center text-gray-400">8P 심화 활동형 이미지</div>
-                <h4 class="text-xl font-bold mb-2">참여 워크북형 (8P)</h4>
-                <p class="text-gray-500">초등학교 및 유치원 정규 수업용. 퀴즈와 활동지를 통해 학습 몰입도를 높였습니다.</p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/10 p-8 rounded-3xl border border-white/10 hover:border-blue-500 transition">
+                    <h4 class="text-xl font-bold mb-4 flex items-center"><span class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mr-3 text-sm">500+</span> 로고 스티커 제작</h4>
+                    <p class="text-gray-400 text-sm">500부 이상 주문 시, 보건소 로고가 들어간 스티커를 별도로 제작해 드립니다[cite: 17, 31].</p>
+                </div>
+                <div class="bg-white/10 p-8 rounded-3xl border border-white/10 hover:border-blue-500 transition">
+                    <h4 class="text-xl font-bold mb-4 flex items-center"><span class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mr-3 text-sm">1000+</span> 본문 로고 인쇄</h4>
+                    <p class="text-gray-400 text-sm">1,000부 이상 대량 주문 시, 책자 자체에 보건소 로고를 포함하여 인쇄가 가능합니다[cite: 18, 32].</p>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <p class="text-blue-400 font-bold mb-2">※ 대량 주문 시 수량별 특별 할인 혜택 제공</p>
+                <p class="text-sm text-gray-500 underline underline-offset-4 decoration-gray-700">판매 단가는 수량 및 커스텀 범위에 따라 상담 시 상세히 안내해 드립니다.</p>
             </div>
         </div>
     </section>
 
-    <footer id="contact" class="bg-blue-600 py-20 px-6 text-center text-white">
-        <h2 class="text-3xl font-bold mb-4">전국 보건소 및 기관 납품 안내</h2>
-        <p class="mb-10 opacity-90">교재 샘플 발송 및 단가 문의는 아래로 연락 주시면 빠르게 안내해 드립니다.</p>
-        <div class="space-y-2 text-lg font-medium">
-            <p>이메일: contact@healthinbooks.com</p>
-            <p>전화: 010-XXXX-XXXX (헬스인북스 담당자)</p>
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 italic">"이렇게 활용하세요" [cite: 19]</h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-6 border rounded-2xl bg-gray-50 hover:bg-white hover:shadow-lg transition">
+                    <p class="font-bold mb-2">📋 교육 보조 교재</p>
+                    <p class="text-sm text-gray-500">어린이집 및 유치원 구강보건 교육 시 [cite: 20]</p>
+                </div>
+                <div class="p-6 border rounded-2xl bg-gray-50 hover:bg-white hover:shadow-lg transition">
+                    <p class="font-bold mb-2">🎁 증정용 홍보물</p>
+                    <p class="text-sm text-gray-500">불소도포 및 구강검진 후 선물용 [cite: 21]</p>
+                </div>
+                <div class="p-6 border rounded-2xl bg-gray-50 hover:bg-white hover:shadow-lg transition">
+                    <p class="font-bold mb-2">🎪 행사 기념품</p>
+                    <p class="text-sm text-gray-500">'치아의 날' 및 지역 건강 축제 홍보용 [cite: 22]</p>
+                </div>
+            </div>
         </div>
-        <div class="mt-16 text-sm opacity-60">
-            &copy; 2026 HealthInBooks. All Rights Reserved.
+    </section>
+
+    <footer id="contact" class="scroll-mt bg-gray-100 py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8 italic">견적 문의 및 샘플 신청 [cite: 23]</h2>
+            <div class="bg-white p-10 rounded-[3rem] shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full opacity-50"></div>
+                <div class="space-y-6 text-lg relative">
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                        <span class="text-gray-400 font-medium">공급사:</span>
+                        <span class="font-bold text-xl">도서출판 헬스인 [cite: 23]</span>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                        <span class="text-gray-400 font-medium">담당자:</span>
+                        <span class="font-bold">강무훈 부장 (010-7963-4624) [cite: 24, 29]</span>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                        <span class="text-gray-400 font-medium">이메일:</span>
+                        <a href="mailto:healthinbook@gmail.com" class="font-bold text-blue-600 hover:underline">healthinbook@gmail.com [cite: 24, 29]</a>
+                    </div>
+                    <div class="pt-8 border-t border-gray-100">
+                        <p class="text-sm text-gray-400 leading-relaxed italic">
+                            서울시 강남구 도곡동 942-9 [cite: 2, 26]<br>
+                            Tel: 070-4007-5689 | Fax: 0504-479-4624 [cite: 3, 24, 26]
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-12 text-sm text-gray-400 font-medium">© 2026 도서출판 헬스인. All Rights Reserved.</p>
         </div>
     </footer>
 
